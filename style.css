@@ -1100,8 +1100,8 @@ h3 {
   height: 95px; /* Promijenite ovu vrijednost prema vašim željama za visinu */
   font-weight: bold;
   position: absolute;
-  top: 25%; /* Promijenite ovu vrijednost prema vašim željama za pomjeranje prema gore */
-  left: 35%; /* Promijenite ovu vrijednost prema vašim željama za pomjeranje ulijevo */
+  top: 30%; /* Promijenite ovu vrijednost prema vašim željama za pomjeranje prema gore */
+  left: 25%; /* Promijenite ovu vrijednost prema vašim željama za pomjeranje ulijevo */
   transform: translate(-50%, -50%) rotate(-10deg); /* Rotacija ulijevo */
   z-index: 1;
   border: 3px solid rgb(255, 255, 255); /* Dodajte bijele linije oko boxa */
