@@ -136,10 +136,10 @@
 </style>
 
 <div class="image-container">
-  <img src="images/vijesti.png" alt="Dobrodošlica">
+  <img src="images/vv1.png" alt="Dobrodošlica">
   <p><span class="bordo-text" style="display: block; margin-top: 10px;">Cijeli svijet priča o tome! Napokon je i na našem tržištu čaj koji će pomoći pri gubitku kilograma!</span></p>
   </div>
-  <hr class="desktop-hr mobile-hr" style="border-top: 1px solid #da1e1e; margin-top: 20px; margin-bottom: 20px;">
+  <hr class="desktop-hr mobile-hr" style="border-top: 1px solid #da1e1e; margin-top: 10px; margin-bottom: 20px;">
 
 
   
@@ -187,7 +187,7 @@
             <!-- Promijenjen stil za mobilne uređaje -->
             <img src="images/plava_glavna-removebg-preview.png" alt="Proizvod" style="max-width: 100%; width: 200px; height: auto; margin-left: auto; margin-right: auto; margin-top: 10px;" />
             <div class="discount-text">Akcija od 50% važi još:</div>
-            <div class="timer">05:29</div>
+            <div class="timer">09:29</div>
             <div class="start-order">
                 <a href="#customer-details-container" style="color: white;">Započni narudžbu</a>
             </div>
@@ -299,7 +299,7 @@
   <p style=text-align:left>Koliko dugo se preporučuje koristiti čaj Evora kako bi se dugoročno održala regulacija tjelesne težine?</p>
   <!-- Novi odgovor -->
   <p style=font-weight:bold;color:#b30000;text-align:left>Dr. Bašić:</p>
-  <p style=text-align:left>Za dugoročno održavanje regulacije tjelesne težine, preporučujemo kontinuiranu konzumaciju čaja Evora u skladu s uputstvima proizvođača. Individualni rezultati mogu varirati, ali redovnost u korištenju ovog čaja može pružiti najbolje dugoročne benefite za vaše zdravlje.</p>
+  <p style=text-align:left>Za dugoročno održavanje regulacije tjelesne težine, preporučujemo kontinuiranu konzumaciju čaja Evora u skladu s uputstvima proizvođača. Individualni rezultati mogu varirati, ali redovnost u korištenju ovog čaja može pružiti najbolje dugoročne benefite za vaše zdravlje. <a href="#comment-container">Pogledajte komentare naših korisnika</a>
   <!-- Novo pitanje -->
 <p style="font-weight: bold; color: #b30000; text-align: left;">Novinar:</p>
 <p style="text-align: left;">Kako čaj Evora doprinosi očuvanju energije i vitalnosti tokom procesa mršavljenja?</p>
@@ -374,6 +374,18 @@
 </script>
 
 
+<style>
+  @media screen and (min-width: 768px) {
+      /* Stilovi za desktop verziju */
+      .desktop-only {
+          margin-left: 60px;
+      }
+  }
+</style>
+</head>
+<body>
+
+
           <div id="customer-details-container">
             <h2>Naručite još danas</h2>
             <div class="product-details">
@@ -397,7 +409,7 @@
                 <input type="text" name="Adresa" placeholder="Unesite adresu" required>
               </div>
               <input type="hidden" name="Proizvod" value="Visoki pritisak">
-              <p><strong>Besplatna dostava u roku 24/48 sati - Plaćanje pouzećem</strong></p>
+              <p class="desktop-only"><strong>Besplatna dostava u roku 24/48 sati - Plaćanje pouzećem</strong></p>
               <div class="input-box">
                 <!-- Ovdje dodajemo stil koji ste naveli na button element -->
                 <button type="submit" class="start-order-box" style="width: 100px; height: 100px; background-color: rgb(53, 221, 67); color: black; text-align: center; line-height: 100px; border-radius: 50%; font-size: 20px; margin: 10px auto; margin-left: 40px;">NARUČI</button>
@@ -427,14 +439,14 @@
           
 </div>
 
-<div class="comment-container">
+<div class="comment-container" id="comment-container">
   <h2 class="title">Komentari zadovoljnih korisnika</h2>
     <div class="comment">
         <img class="profile-pic" src="images/z1.png" alt="User 1">
         <div class="user-info">
-            <div class="user-name">Jasmina</div>
-            <div class="date">2.7.2023.</div>
-            <div class="comment-text">Evo mojih fotografija. Tako me je sramota kako sam izgledala! Isprobao sam mnoge druge brendove, teretanu i zdravu dijetu, upalilo je ali samo na kratko, i na kraju sam se još više udebljao. To me koštalo mnogo novca, vremena i truda. Ali s Apolloss čajem, smršavio sam vrlo brzo i vrlo lako. Prvo sam naručio jedan uzorak i od prvog dana sam shvatio da ovaj proizvod zaista radi. Onda sam naručio kompletan kurs, što je bilo veoma pristupačno. Svako treba da pokuša.</div>
+            <div class="user-name">Jasmina Hadžić</div>
+            <div class="date">5.8.2023.</div>
+            <div class="comment-text">Evo mojih fotografija. Tako me je sramota kako sam izgledala! Oduvijek sam se borila sa viškom kilograma i isprobala sam različite metode, ali nijedna nije dala tako brze i vidljive rezultate kao ovaj čaj za mršavljenje! Pored toga što je ukusan, primjetila sam da mi pomaže da lakše sagorijevam masti i osjećam se puno zdravije. Veoma sam zadovoljna i svima ga toplo preporučujem</div>
             <div class="images-container">
                 <img src="images/zena1.jpg" alt="Slika 1">
             </div>
@@ -444,8 +456,8 @@
       <div class="comment">
           <img class="profile-pic" src="images/z2.jpg" alt="User 4">
           <div class="user-info">
-              <div class="user-name">Anita</div>
-              <div class="date">18.9.2023.</div>
+              <div class="user-name">Anja Bašić</div>
+              <div class="date">5.8.2023.</div>
               <div class="comment-text">Potvrđujem! <a href="#customer-details-container">Evora caj</a> radi zaista dobro čak i na problematičnim područjima, masnoća ravnomjerno odlazi sa cijelog tijela. To je očigledno od prvih dana da proizvod radi.</div>
               <div class="like-button"><i class="fa fa-thumbs-up"></i>12</div>
           </div>
@@ -453,47 +465,65 @@
       <div class="comment">
           <img class="profile-pic" src="images/m2.jpg" alt="User 5">
           <div class="user-info">
-              <div class="user-name">Petar</div>
-              <div class="date">22.9.2023.</div>
-              <div class="comment-text">Oduševljen sam rezultatima koje sam postigao uz pomoć ovog čaja! Moje vrijednosti krvnog pritiska su se stabilizovale, a osjećam se energičnije nego ikad prije.</div>
+              <div class="user-name">Petar Dudakić</div>
+              <div class="date">5.8.2023.</div>
+              <div class="comment-text">Evo da podijelim svoje iskustvo sa ovim čajem za mršavljenje. Bio sam prilično skeptičan, ali odlučio sam da mu dam šansu. I stvarno sam se iznenadio rezultatima! Gubitak kilograma i smanjenje masnih naslaga su primjetni, a osjećam se i puno energičnije tokom dana. Definitivno preporučujem svim momcima koji žele da se osjećaju bolje u svojoj koži.</div>
               <div class="like-button"><i class="fa fa-thumbs-up"></i>10</div>
+              <div class="user-info">
+                <img class="profile-pic" src="images/d3.jpg" alt="User 17" style="margin-left: -10px;">
+                <div class="user-name">Dr. Bašić</div>
+                <div class="date">5.8.2023.</div>
+            </div>
+            <div class="comment-text reply-text">
+              Vaša iskustva s ovim čajem za mršavljenje zvuče izuzetno obećavajuće.Nastavite se brinuti o svom zdravlju i pratite svoj napredak kako biste ostali na pravom putu prema uspehu.
+            </div>
+            <div class="like-button reply-like"><i class="fa fa-thumbs-up"></i>5</div>
           </div>
       </div>
       <div class="comment">
           <img class="profile-pic" src="images/z4.png" alt="User 6">
           <div class="user-info">
-              <div class="user-name">Ana</div>
-              <div class="date">29.9.2023.</div>
-              <div class="comment-text"><a href="#customer-details-container">Evora caj</a> mi je pomogao smanjiti nivo stresa, što je, vjerujem, dodatno pozitivno utjecalo na moj krvni pritisak. Oduševljena sam!</div>
+              <div class="user-name">Amra Nišić</div>
+              <div class="date">5.8.2023.</div>
+              <div class="comment-text">Moram priznati da sam bila skeptična prema ovim čajevima za mršavljenje, ali sam odlučila probati <a href="#customer-details-container">Evora caj</a>. I nisam se razočarala! U kombinaciji sa zdravim načinom ishrane i tjelovježbom, ovaj čaj je ubrzao moj proces gubitka kilograma. Osim toga, primjetila sam da mi pomaže da se osjećam manje naduto i imam više energije. Preporučujem ga svim djevojkama koje žele postići rezultate.</div>
               <div class="like-button"><i class="fa fa-thumbs-up"></i>9</div>
           </div>
       </div>
       <div class="comment">
           <img class="profile-pic" src="images/m3.jpg" alt="User 7">
           <div class="user-info">
-              <div class="user-name">Marko</div>
-              <div class="date">3.10.2023.</div>
-              <div class="comment-text">Ovaj čaj je postao sastavni dio mog jutarnjeg rituala. Osim što mi pomaže održavati normalan krvni pritisak, pruža mi i osjećaj svježine i punoće energije.</div>
+              <div class="user-name">Namik Omeragić</div>
+              <div class="date">4.8.2023.</div>
+              <div class="comment-text">Oduvijek sam bio aktivan, ali borba sa suvišnim kilogramima me prilično frustrirala. Odlučio sam dati šansu ovom čaju za mršavljenje i ispostavilo se da je bio ključan faktor u mom napretku. Brže sagorijevanje masti i lakša kontrola apetita su stvarno primjetni. Sada se osjećam samopouzdanije i spremno se suočavam s izazovima.</div>
               <div class="like-button"><i class="fa fa-thumbs-up"></i>13</div>
           </div>
       </div>
       <div class="comment">
           <img class="profile-pic" src="images/z3.png" alt="User 8">
           <div class="user-info">
-              <div class="user-name">Tamara</div>
-              <div class="date">9.10.2023.</div>
-              <div class="comment-text">Ovaj čaj mi je pomogao u smanjenju natečenosti i osjećam se laganije nego ikad prije. Preporučujem ga svima koji imaju problema s krvnim pritiskom!</div>
+              <div class="user-name">Adna Efendić</div>
+              <div class="date">4.8.2023.</div>
+              <div class="comment-text">Ovaj čaj za mršavljenje je zaista promijenio moju rutinu i kako se osjećam. Kilogrami su polako počeli nestajati, a ja sam napokon osjetila da napredujem prema svojim ciljevima. Osim toga, ukusan je i osvježavajuć, što mi pomaže da ostanem hidrirana tokom dana. Ovo je definitivno nešto što ću nastaviti koristiti.</div>
               <div class="images-container">
                 <img src="images/zena3.jpg" alt="Slika 1">
             </div>
               <div class="like-button"><i class="fa fa-thumbs-up"></i>7</div>
+              <div class="user-info">
+                <img class="profile-pic" src="images/d3.jpg" alt="User 17" style="margin-left: -10px;">
+                <div class="user-name">Dr. Bašić</div>
+                <div class="date">4.8.2023.</div>
+            </div>
+            <div class="comment-text reply-text">
+                Odličan primjer kako uz Evora čaj se brzo stiže do gubitka suvišnih kilograma. Vi ste ponos i primjer kako se treba truditi i nikada ne predavati! Svaka cast.
+            </div>
+            <div class="like-button reply-like"><i class="fa fa-thumbs-up"></i>12</div>
           </div>
       </div>
       <div class="comment">
         <img class="profile-pic" src="images/z5.png" alt="User 9">
         <div class="user-info">
-            <div class="user-name">Lejla</div>
-            <div class="date">15.10.2023.</div>
+            <div class="user-name">Hana Kadrić</div>
+            <div class="date">4.8.2023.</div>
             <div class="comment-text">Nisam mogla vjerovati koliko brzo sam vidjela rezultate. Preporučila sam <a href="#customer-details-container">Evora čaj</a> svojim prijateljicama i svi su oduševljeni! Napokon sam našla proizvod koji zaista djeluje.</div>
             <div class="like-button"><i class="fa fa-thumbs-up"></i>15</div>
         </div>
@@ -503,8 +533,8 @@
     <div class="comment">
         <img class="profile-pic" src="images/m4.jpg" alt="User 10">
         <div class="user-info">
-            <div class="user-name">Milan</div>
-            <div class="date">21.10.2023.</div>
+            <div class="user-name">Adnan Batalović</div>
+            <div class="date">4.8.2023.</div>
             <div class="comment-text">Oduvijek sam bio skeptičan prema proizvodima za mršavljenje, ali <a href="#customer-details-container">Evora čaj</a> me je potpuno impresionirao! Osjećam se zdravije, vitalnije i samopouzdanije nego ikada prije.</div>
             <div class="like-button"><i class="fa fa-thumbs-up"></i>14</div>
         </div>
@@ -514,26 +544,35 @@
     <div class="comment">
         <img class="profile-pic" src="images/m1.png" alt="User 11">
         <div class="user-info">
-            <div class="user-name">Stefan</div>
-            <div class="date">27.10.2023.</div>
+            <div class="user-name">Nadir Ogrešević</div>
+            <div class="date">3.8.2023.</div>
             <div class="comment-text">Ovaj čaj je pravo otkriće za mene. Ne samo da sam izgubio kilograme, već sam primijetio i poboljšanje u svom općem zdravstvenom stanju. Sada se osjećam kao potpuno nova osoba!</div>
             <div class="images-container">
               <img src="images/muski1.webp" alt="Slika 1">
           </div>
             <div class="like-button"><i class="fa fa-thumbs-up"></i>17</div>
-        </div>
+       <div class="user-info">
+              <img class="profile-pic" src="images/d3.jpg" alt="User 17" style="margin-left: -10px;">
+              <div class="user-name">Dr. Bašić</div>
+              <div class="date">3.8.2023.</div>
+          </div>
+          <div class="comment-text reply-text">
+              Drago mi je što vidim da ste pronašli korist u <a href="#customer-details-container">Evora čaju za mršavljenje.</a> Nastavite sa zdravim životnim stilom koji vas je doveo do ovih sjajnih rezultata.
+          </div>
+          <div class="like-button reply-like"><i class="fa fa-thumbs-up"></i>18</div>
+          </div>
     </div>
      <div class="comment">
         <img class="profile-pic" src="images/z6.jpg" alt="User 12">
         <div class="user-info">
-            <div class="user-name">Nina</div>
-            <div class="date">5.11.2023.</div>
+            <div class="user-name">Nina Hodžić</div>
+            <div class="date">3.8.2023.</div>
             <div class="comment-text">Evora čaj je promijenio moj pogled na mršavljenje. Konačno sam pronašla proizvod koji nije samo obećavao, već i ispunio svoje obećanje. Osjećam se zdravije i puna sam energije!</div>
             <div class="like-button"><i class="fa fa-thumbs-up"></i>8</div>
             <div class="user-info">
               <img class="profile-pic" src="images/d3.jpg" alt="User 17" style="margin-left: -10px;">
               <div class="user-name">Dr. Bašić</div>
-              <div class="date">4.12.2023.</div>
+              <div class="date">3.8.2023.</div>
           </div>
           <div class="comment-text reply-text">
               Drago mi je što čujem da ste zadovoljni rezultatima <a href="#customer-details-container">Evora čaja</a>. Nastavite s zdravim navikama i uskoro ćete primijetiti još veće benefite. Slobodno me kontaktirajte ako imate dodatna pitanja!
@@ -546,10 +585,13 @@
     <div class="comment">
         <img class="profile-pic" src="images/m5.jpg" alt="User 13">
         <div class="user-info">
-            <div class="user-name">Dario</div>
-            <div class="date">12.11.2023.</div>
+            <div class="user-name">Kerim Nurković</div>
+            <div class="date">13.8.2023.</div>
             <div class="comment-text">Nakon godina borbe s viškom kilograma, napokon sam pronašao rješenje uz <a href="#customer-details-container">Evora čaj</a>. Osjećam se sjajno i izgledam bolje nego ikada prije. Hvala vam na ovom čudesnom proizvodu!</div>
             <div class="like-button"><i class="fa fa-thumbs-up"></i>9</div>
+            <div class="images-container">
+                <img src="images/k11.png" alt="Slika 1">
+            </div>
         </div>
     </div>
 
@@ -557,8 +599,8 @@
     <div class="comment">
         <img class="profile-pic" src="images/z7.jpg" alt="User 14">
         <div class="user-info">
-            <div class="user-name">Emina</div>
-            <div class="date">18.11.2023.</div>
+            <div class="user-name">Emina Hadžibegić</div>
+            <div class="date">13.8.2023.</div>
             <div class="comment-text">Evora čaj nije samo promijenio moj izgled, već i moje samopouzdanje. Sada se osjećam sjajno u svojoj koži i spremna sam za sve izazove koje mi život donosi.</div>
             <div class="like-button"><i class="fa fa-thumbs-up"></i>11</div>
         </div>
@@ -568,8 +610,8 @@
     <div class="comment">
         <img class="profile-pic" src="images/user-2.png" alt="User 15">
         <div class="user-info">
-            <div class="user-name">Mirza</div>
-            <div class="date">25.11.2023.</div>
+            <div class="user-name">Mirza Fazlić</div>
+            <div class="date">2.8.2023.</div>
             <div class="comment-text">Uz <a href="#customer-details-container">Evora čaj</a> sam postigao rezultate o kojima sam samo sanjao. Ovo je zaista proizvod koji vrijedi svake uložene kune. Hvala vam na ovom čudesnom proizvodu!</div>
             <div class="like-button"><i class="fa fa-thumbs-up"></i>10</div>
         </div>
@@ -579,19 +621,19 @@
 <div class="comment">
   <img class="profile-pic" src="images/z8.jpg" alt="User 16">
   <div class="user-info">
-      <div class="user-name">Sara</div>
-      <div class="date">3.12.2023.</div>
+      <div class="user-name">Sara Turković</div>
+      <div class="date">2.8.2023.</div>
       <div class="comment-text">Konačno sam pronašla proizvod koji nije samo pomogao da smršam, već me je potaknuo na zdravije životne navike. <a href="#customer-details-container">Evora čaj</a> je zaista revolucionaran!</div>
       <div class="like-button"><i class="fa fa-thumbs-up"></i>13</div>
       <div class="user-info">
           <img class="profile-pic" src="images/d3.jpg" alt="User 17" style="margin-left: -10px;">
           <div class="user-name">Dr. Bašić</div>
-          <div class="date">4.12.2023.</div>
+          <div class="date">2.8.2023.</div>
       </div>
       <div class="comment-text reply-text">
           Drago mi je što čujem da ste zadovoljni rezultatima <a href="#customer-details-container">Evora čaja</a>. Nastavite s zdravim navikama i uskoro ćete primijetiti još veće benefite. Slobodno me kontaktirajte ako imate dodatna pitanja!
       </div>
-      <div class="like-button reply-like"><i class="fa fa-thumbs-up"></i>5</div>
+      <div class="like-button reply-like"><i class="fa fa-thumbs-up"></i>9</div>
   </div>
 </div>
 
@@ -606,22 +648,16 @@
       <div class="small-container">
           <div class="row">
               <div class="col-5">
-                  <img src="images/robot-removebg-preview.png">
+                  <img src="images/1.png">
               </div>
               <div class="col-5">
-                  <img src="images/bingo-removebg-preview.png">
+                  <img src="images/3.png">
               </div>
               <div class="col-5">
-                  <img src="images/logo-coca-cola.png">
+                  <img src="images/2.png">
               </div>
               <div class="col-5">
-                  <img src="images/logo-paypal.png">
-              </div>
-              <div class="col-5">
-                  <img src="images/logo-philips.png">
-              </div>
-              <div class="col-5">
-                  <img src="images/konzum-removebg-preview.png">
+                  <img src="images/logo-godrej.png">
               </div>
           </div>
       </div>
