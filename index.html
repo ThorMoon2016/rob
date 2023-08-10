@@ -422,7 +422,25 @@
               <p class="desktop-only"><strong>Besplatna dostava u roku 24/48 sati - Plaćanje pouzećem</strong></p>
               <div class="input-box">
                 <!-- Ovdje dodajemo stil koji ste naveli na button element -->
-                <button type="submit" class="start-order-box" style="width: 100px; height: 100px; background-color: rgb(53, 221, 67); color: black; text-align: center; line-height: 100px; border-radius: 50%; font-size: 20px; margin: 10px auto; margin-left: 40px;">NARUČI</button>
+               <button type="submit" class="start-order-box" style="width: 100px; height: 100px; background-color: rgb(53, 221, 67); color: black; text-align: center; line-height: 100px; border-radius: 50%; font-size: 20px; margin: 10px auto; margin-left: 40px;" onclick="gtag_report_conversion();">NARUČI</button>
+
+<!-- Event snippet for Purchase conversion page -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-11295485389/d8BfCMPhsM8YEM3bjYoq',
+      'transaction_id': '',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 
               </div>
             </form>
