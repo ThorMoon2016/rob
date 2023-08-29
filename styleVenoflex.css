@@ -480,7 +480,7 @@ select:focus{
 /* styles.css */
 /* Ovo je stil za header */
 .header {
-  background-color: green;
+  background-color: purple;
   color: white;
   text-align: center;
   padding: 20px;
@@ -514,7 +514,7 @@ select:focus{
 .header-links {
   text-align: center;
   padding: 10px;
-  background-color: green;
+  background-color: purple;
   overflow-x: auto; /* Omogućava horizontalno skrolovanje */
     white-space: nowrap; /* Onemogućava prelazak teksta u novi red */
 }
