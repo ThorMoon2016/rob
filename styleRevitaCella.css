@@ -48,6 +48,9 @@ p{
     padding-left: 25px;
     padding-right: 25px;
 }
+
+
+
 .row{
     display: flex;
     align-items: center;
@@ -475,10 +478,16 @@ select:focus{
 /*--------za header gdje su proizvodi account-page------   MOZDA NE TREBA*/
 
 /* styles.css */
+/* Ovo je stil za header */
 .header {
   background-color: red;
-  /* Ostali stilovi za header */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
+
 
 .header-text {
   text-align: center;
