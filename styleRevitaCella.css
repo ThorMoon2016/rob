@@ -1,184 +1,154 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .navbar{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    margin-top: 5px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-top: 5px;
 }
 
 /* Primjer kako pomaknuti navbar prema gore */
 .navbar {
-  margin-top: -20px; /* Prilagodite ovo prema željenom pomaku prema gore */
+margin-top: -20px; /* Prilagodite ovo prema željenom pomaku prema gore */
 }
 
 
 nav{
-    flex: 1;
-    text-align: right;
+  flex: 1;
+  text-align: right;
 }
 nav ul{
-    display: inline-block;
-    list-style-type: none;
+  display: inline-block;
+  list-style-type: none;
 }
 nav ul li{
-    display: inline-block;
-    margin-right: 20px;
+  display: inline-block;
+  margin-right: 20px;
 }
 a{
-    text-decoration: none;
-    color: #555;
+  text-decoration: none;
+  color: #555;
 }
 p{
-    color: #555;
+  color: #555;
 }
 
 .container{
-    max-width: 1300px;
-    
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+  max-width: 1300px;
+  
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 
 
 .row{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-
-  /* ovo je za text i slike na homepage na vrhu  */
-
-.col-2{
-    flex-basis: 50%;
-    min-width: 300px;
-}
-.col-2 img{
-    max-width: 100%;
-    padding: 50 px 0;
-}
-.logo.no-text{
-    text-indent: -9px;
-    font-size: 20px;
-    color: rgb(241, 10, 10);
-}
-.col-2 h1{
-    font-size: 50px;
-    line-height: 60px;
-    margin: 1px 0;
-    margin-bottom: 100px;
-}
-.btn{
-    display: inline-block;
-    background: #ff523b;
-    color: #fff;
-    padding: 8px 30px;
-    margin: 30px 0;
-    border-radius: 30px;
-    transition: background 0.5s;
-}
-
-.btn:hover{
-   background: #563434;
-}
-
-@media screen and (max-width: 767px) {
-  /* Pomičemo gumb u desno za 10px */
-  .btn {
-    margin-left: 80px;
-  }
-}
-.categories{
-    margin: 70px 0;
-}
-
-/* ovo je za proizvode na homepage  */
-
-.col-4{
-    flex-basis: 25%;
-    padding: 10px;
-    min-width: 200px;
-    margin-bottom: 50px;
-    transition: transform 0.5s;
-}
-.col-4 img{
-    width: 100%;
-}
- /* Primjer primjene media query-ja za mobilne uređaje */
- @media (max-width: 768px) {
-  .row-5 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Postavite dvije kolone s jednako raspodijeljenim prostorom */
-    gap: 10px; /* Dodajte razmak između elemenata */
-    max-width: 100%; /* Ograničite maksimalnu širinu .row kako bi proizvodi stali unutar okvira stranice */
-    overflow: hidden; /* Sakrijte horizontalni overflow kako biste spriječili pojavu horizontalnog scrollbar-a */
-  }
-
-  .row-5{
-    text-align: center;
-}
-
-.single-product .row-5{
-  text-align: left;
-}
-
-  .col-4 {
-    width: 100%; /* Postavite širinu na 100% kako bi proizvodi zauzeli cijelu širinu kolone */
-    box-sizing: border-box;
-    padding: 5px;
-    margin-left: -35px; /* Poništite lijevi margin kako bismo započeli s početne točke */
-    margin-top: 20px;
-  }
-
-  .col-4 img {
-    width: 100%; /* Postavite širinu slike na 100% kako bi se prilagodila širini .col-4 */
-    height: auto; /* Očuvajte omjer slike */
-  }
-
-  .col-4 h4 {
-    font-size: 15px;
-    margin: 40px 0;
-    text-align: center;
-  }
-  .col-4 p {
-    font-size: 16px;
-    margin: 10px 0;
-    text-align: center;
-    margin-top: -20px;
-  }
-  .rating2 .fa{
-    color: #ff523b;
-    text-align: center;
-  position: relative; /* Postavljanje na relativno pozicioniranje */
-  top: -30px; /* Pomjeranje ikona prema gore za 10 piksela */
-  transform: translateX(0px); /* Pomjeranje ikona u desno za 60 piksela */
-  }
-  .col-4 img {
-    transform: scale(1.8); /* Povećanje slike za 20% */
-  }
-}
-
-@media (min-width: 1280px) {
-.row-5{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
+
+
+/* ovo je za text i slike na homepage na vrhu  */
+
+.col-2{
+  flex-basis: 50%;
+  min-width: 300px;
+}
+.col-2 img{
+  max-width: 100%;
+  padding: 50 px 0;
+}
+.logo.no-text{
+  text-indent: -9px;
+  font-size: 20px;
+  color: rgb(241, 10, 10);
+}
+.col-2 h1{
+  font-size: 50px;
+  line-height: 60px;
+  margin: 1px 0;
+  margin-bottom: 100px;
+}
+.btn{
+  display: inline-block;
+  background: #ff523b;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+
+.btn:hover{
+ background: #563434;
+}
+
+@media screen and (max-width: 767px) {
+/* Pomičemo gumb u desno za 10px */
+.btn {
+  margin-left: 80px;
+}
+}
+.categories{
+  margin: 70px 0;
+}
+
+/* ovo je za proizvode na homepage  */
+
+.col-4{
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+.col-4 img{
+  width: 100%;
+}
+/* Primjer primjene media query-ja za mobilne uređaje */
+@media (max-width: 768px) {
+.row-5 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Postavite dvije kolone s jednako raspodijeljenim prostorom */
+  gap: 10px; /* Dodajte razmak između elemenata */
+  max-width: 100%; /* Ograničite maksimalnu širinu .row kako bi proizvodi stali unutar okvira stranice */
+  overflow: hidden; /* Sakrijte horizontalni overflow kako biste spriječili pojavu horizontalnog scrollbar-a */
+}
+
+.row-5{
+  text-align: center;
+}
+
+.single-product .row-5{
+text-align: left;
+}
+
+.col-4 {
+  width: 100%; /* Postavite širinu na 100% kako bi proizvodi zauzeli cijelu širinu kolone */
+  box-sizing: border-box;
+  padding: 5px;
+  margin-left: -35px; /* Poništite lijevi margin kako bismo započeli s početne točke */
+  margin-top: 20px;
+}
+
+.col-4 img {
+  width: 100%; /* Postavite širinu slike na 100% kako bi se prilagodila širini .col-4 */
+  height: auto; /* Očuvajte omjer slike */
+}
+
 .col-4 h4 {
-  font-size: 16px;
+  font-size: 15px;
   margin: 40px 0;
   text-align: center;
 }
@@ -188,177 +158,207 @@ p{
   text-align: center;
   margin-top: -20px;
 }
-.rating2 .fa {
+.rating2 .fa{
+  color: #ff523b;
   text-align: center;
-  position: relative; /* Postavljanje na relativno pozicioniranje */
-  top: -30px; /* Pomjeranje ikona prema gore za 10 piksela */
-  transform: translateX(60px); /* Pomjeranje ikona u desno za 60 piksela */
+position: relative; /* Postavljanje na relativno pozicioniranje */
+top: -30px; /* Pomjeranje ikona prema gore za 10 piksela */
+transform: translateX(0px); /* Pomjeranje ikona u desno za 60 piksela */
+}
+.col-4 img {
+  transform: scale(1.8); /* Povećanje slike za 20% */
+}
+}
+
+@media (min-width: 1280px) {
+.row-5{
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content: flex-start;
+}
+.col-4 h4 {
+font-size: 16px;
+margin: 40px 0;
+text-align: center;
+}
+.col-4 p {
+font-size: 16px;
+margin: 10px 0;
+text-align: center;
+margin-top: -20px;
+}
+.rating2 .fa {
+text-align: center;
+position: relative; /* Postavljanje na relativno pozicioniranje */
+top: -30px; /* Pomjeranje ikona prema gore za 10 piksela */
+transform: translateX(60px); /* Pomjeranje ikona u desno za 60 piksela */
 }
 
 .col-4 img {
-  transform: scale(1.6); /* Povećanje slike za 20% */
+transform: scale(1.6); /* Povećanje slike za 20% */
 }
 .rating2 .fa{
-  color: #ff523b;
+color: #ff523b;
 }
 }
 
 .title{
-    text-align: center;
-    margin: 0 auto 80px;
-    position: relative;
-    line-height: 60px;
-    color: #555;
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #555;
 }
 .title::after{
-    content: '';
-    background: #ff523b;
-    width: 80px;
-    height: 5px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
+  content: '';
+  background: #ff523b;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media screen and (max-width: 767px) {
-  .title {
-    line-height: 1.3; /* Smanjujemo visinu linije teksta na mobilnoj verziji (prilagodite broj po potrebi) */
-  }
+.title {
+  line-height: 1.3; /* Smanjujemo visinu linije teksta na mobilnoj verziji (prilagodite broj po potrebi) */
+}
 }
 
 h4{
-    color: #e21313;
-    font-weight: normal;
+  color: #e21313;
+  font-weight: normal;
 }
 .col-4 p{
-    font-size: 14;
+  font-size: 14;
 }
 .rating .fa{
-    color: #ff523b;
+  color: #ff523b;
 }
 
 .col-4:hover{
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .comment-text a {
-  color: red;
+color: red;
 }
 
 
 h5{
-    color: #555;
-    font-weight: normal;
-    text-decoration: line-through;          
+  color: #555;
+  font-weight: normal;
+  text-decoration: line-through;          
 }   
 
 .single-product h5{
-    margin: 20px 0;
-    font-size: 22px;
-    font-weight: bold;
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 /*----------testimonial-------*/
 
 .testimonial{
-    padding-top: 100px;
+  padding-top: 100px;
 }
 .testimonial .col-3{
-    text-align: center;
-    padding: 15px 5px;
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
-    cursor: pointer;
-    transition: transform 0.5s;
+  text-align: center;
+  padding: 15px 5px;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.5s;
 }
 .testimonial .col-3 img{
-    width: 80px;
-    margin-top: 20px;
-    border-radius: 50%;
+  width: 80px;
+  margin-top: 20px;
+  border-radius: 50%;
 }
 .testimonial .col-3:hover{
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 .fa.fa-quote-left{
-    font-size: 34px;
-    color: #ff523b;
-    margin-top: -20px;
+  font-size: 34px;
+  color: #ff523b;
+  margin-top: -20px;
 }
 .col-3 p{
-    font-size: 18px;
-    margin: 12px 0;
-    color: #000000;
+  font-size: 18px;
+  margin: 12px 0;
+  color: #000000;
 }
 
 .testimonial .col-3 h3{
-    font-weight: 600;
-    color: #000000;
-    font-size: 16px;
-    margin-top: 10px;
+  font-weight: 600;
+  color: #000000;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 .col-3{
-  flex-basis: 30%;
-  min-width: 250px;
-  margin-bottom: 30px;
+flex-basis: 30%;
+min-width: 250px;
+margin-bottom: 30px;
 }
 .col-3 img{
-  width: 100%;
+width: 100%;
 }
 .small-container{
-  max-width: 1080px;
-  margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
+max-width: 1080px;
+margin: auto;
+padding-left: 25px;
+padding-right: 25px;
 }
 
 /*---za slike brendova(sponzora) brands---------*/
 .brands{
-    margin: 100px auto;
+  margin: 100px auto;
 }
 .brands .col-5 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
-@media screen and (max-width: 767px) {
-    .brands .col-5 {
-        flex-basis: 50%;
-        max-width: 50%;
-        margin-top: -20px;
-        
-    }
-}
 @media screen and (max-width: 767px) {
   .brands .col-5 {
-    margin-top: -20px; /* Podešavanje željene margine prema gore */
+      flex-basis: 50%;
+      max-width: 50%;
+      margin-top: -20px;
+      
   }
+}
+@media screen and (max-width: 767px) {
+.brands .col-5 {
+  margin-top: -20px; /* Podešavanje željene margine prema gore */
+}
 }
 
 @media screen and (max-width: 767px) {
-  .brands .small-container {
-    margin-top: -0px; /* Podešavanje željene margine prema gore */
-  }
+.brands .small-container {
+  margin-top: -0px; /* Podešavanje željene margine prema gore */
+}
 }
 
 
 .col-5{
-    width: 160px;
+  width: 160px;
 }
 .col-5 img{
-    width: 100%;
-    cursor: pointer;
-    filter: grayscale(100%);
+  width: 100%;
+  cursor: pointer;
+  filter: grayscale(100%);
 }
 .col-5 img:hover{
-    filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 .menu-icon{
-    width: 20px;
-    margin-left: 20px;
-    display: none;
+  width: 20px;
+  margin-left: 20px;
+  display: none;
 }
 
 
@@ -366,82 +366,82 @@ h5{
 /*---------footer-------*/
 
 footer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 1000;
-    background-color: #4e4e4e;
-    color: #333;
-    padding: 10px;
-    text-align: center;
-  }
-  
-/* Dodajte bijelu boju i podvlaku na link u footeru */
-footer a {
-  color: white;
-  text-decoration: underline;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1000;
+  background-color: #4e4e4e;
+  color: #333;
+  padding: 10px;
+  text-align: center;
 }
 
-  
+/* Dodajte bijelu boju i podvlaku na link u footeru */
+footer a {
+color: white;
+text-decoration: underline;
+}
+
+
 
 /*--------- ZA 3 LINIJE SA STRANE ZA MOB MENI media query for menu -------*/
 
 @media only screen and (max-width: 800px){
 
-    nav ul{
-        position: absolute;
-        top: 75px;
-        left: 30;
-        background: #b1b0b0;
-        width: 28%;
-        overflow: hidden;
-        transition: max-height 0.5;
-    }
-    nav ul li{
-        display: block;
-        margin-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    nav ul li a{
-        color: #fff;
-    }
-    .menu-icon{
-        display: block;
-        cursor: pointer;
-        margin-top: 12px;
-    }
+  nav ul{
+      position: absolute;
+      top: 75px;
+      left: 30;
+      background: #b1b0b0;
+      width: 28%;
+      overflow: hidden;
+      transition: max-height 0.5;
+  }
+  nav ul li{
+      display: block;
+      margin-right: 50px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  nav ul li a{
+      color: #fff;
+  }
+  .menu-icon{
+      display: block;
+      cursor: pointer;
+      margin-top: 12px;
+  }
 }
 /*--------- all products page ------*/
 
 .row-2{
-    justify-content: space-between;
-    margin: 100px auto 50px;
+  justify-content: space-between;
+  margin: 100px auto 50px;
 }
 select{
-    border: 1px solid #ff523b;
-    padding: 5px;
+  border: 1px solid #ff523b;
+  padding: 5px;
 }
 select:focus{
-    outline: none;
+  outline: none;
 }
 .page-btn{
-    margin: 0 auto 80px;
+  margin: 0 auto 80px;
 
 }
 .page-btn span{
-    display: inline-block;
-    border: 1px solid #ff523b;
-    margin-left: 10px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    cursor: pointer;
+  display: inline-block;
+  border: 1px solid #ff523b;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
 }
 .page-btn span:hover{
-    background: #ff523b;
-    color: #fff;
+  background: #ff523b;
+  color: #fff;
 }
 
 
@@ -452,25 +452,25 @@ select:focus{
 
 /*-----media query for less than 600 screen size  MOZDA NE TREBA*/
 @media only screen and (max-width: 600px){
-    .row{
-        text-align: center;
-    }
-    .col-2, .col-3, .col-4{
-        flex-basis: 100%;
-    }
-    .single-product .row{
-        text-align: left;
-    }
-    .single-product .col-2{
-        padding: 20px 0;
-    }
-    .single-product h1{
-        font-size: 26px;
-        line-height: 32px;
-    }
-    .cart-info p{
-        display: none;
-    }
+  .row{
+      text-align: center;
+  }
+  .col-2, .col-3, .col-4{
+      flex-basis: 100%;
+  }
+  .single-product .row{
+      text-align: left;
+  }
+  .single-product .col-2{
+      padding: 20px 0;
+  }
+  .single-product h1{
+      font-size: 26px;
+      line-height: 32px;
+  }
+  .cart-info p{
+      display: none;
+  }
 }
 
 
@@ -480,768 +480,1028 @@ select:focus{
 /* styles.css */
 /* Ovo je stil za header */
 .header {
-  background-color: orange;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-left: -20px;
-  margin-right: -20px;
+background-color: orange;
+color: white;
+text-align: center;
+padding: 20px;
+margin-left: -20px;
+margin-right: -20px;
 }
 
 
 .header-text {
-  text-align: center;
-  padding: 10px;
-  color: white;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+text-align: center;
+padding: 10px;
+color: white;
+font-weight: bold;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 .header-text p {
-  margin: 0;
-  transform: translateY(10px);
+margin: 0;
+transform: translateY(10px);
 }
 
 .header-text hr {
-  border: none;
-  border-top: 2px solid white;
-  flex-basis: 100%;
-  margin-top: 15px;
+border: none;
+border-top: 2px solid white;
+flex-basis: 100%;
+margin-top: 15px;
 }
 
 .header-links {
-  text-align: center;
-  padding: 10px;
-  background-color: orange;
-  overflow-x: auto; /* Omogućava horizontalno skrolovanje */
-    white-space: nowrap; /* Onemogućava prelazak teksta u novi red */
+text-align: center;
+padding: 10px;
+background-color: orange;
+overflow-x: auto; /* Omogućava horizontalno skrolovanje */
+  white-space: nowrap; /* Onemogućava prelazak teksta u novi red */
 }
 
 
 .header-links a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
+color: white;
+text-decoration: none;
+margin: 0 15px;
 }
 
 .header-links a:hover {
-  text-decoration: underline;
+text-decoration: underline;
 }
 
 .letter-container {
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
-  margin-left: -5px;
+display: flex;
+align-items: center;
+margin-right: 30px;
+margin-left: -5px;
 }
 
 .letter {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(221, 18, 18);
-  text-align: center;
-  font-weight: bold;
-  margin-right: 5px;
+display: inline-block;
+width: 20px;
+height: 20px;
+background-color: rgb(255, 255, 255);
+color: rgb(221, 18, 18);
+text-align: center;
+font-weight: bold;
+margin-right: 5px;
 }
 
 .icon-container {
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
 }
 
 .icon {
-  font-size: 20px;
-  color: white;
-  margin-right: 10px;
+font-size: 20px;
+color: white;
+margin-right: 10px;
 }
 
 .search-icon {
-  cursor: pointer;
+cursor: pointer;
 }
 
 
 /* styles.css */
 @media (min-width: 768px) {
-  .header-text {
-    padding-left: 500px; /* Pomicanje teksta udesno */
-  }
+.header-text {
+  padding-left: 500px; /* Pomicanje teksta udesno */
+}
 
-  .icon {
-    margin-right: 10px; /* Pomicanje ikona udesno */
-  }
+.icon {
+  margin-right: 10px; /* Pomicanje ikona udesno */
+}
 }
 
 @media (max-width: 767px) {
-    body {
-        overflow-x: hidden;
-    }
+  body {
+      overflow-x: hidden;
+  }
 }
 
 
 
 
 .account-page{
-    padding: 50px 0;
-    background: radial-gradient(#fff,#ffd6d6);
+  padding: 50px 0;
+  background: radial-gradient(#fff,#ffd6d6);
 }
 .form-container{
-    background: #fff;
-    width: 300px;
-    height: 400px;
-    position: relative;
-    text-align: center;
-    padding: 20px 0;
-    margin: auto;
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
-    overflow: hidden;
+  background: #fff;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  margin: auto;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
 .form-container span{
-    font-weight: bold;
-    padding: 0 10px;
-    color: #555;
-    cursor: pointer;
-    width: 100px;
-    display: inline-block;
+  font-weight: bold;
+  padding: 0 10px;
+  color: #555;
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
 }
 .form-btn{
-    display: inline-block;
+  display: inline-block;
 }
 .form-container form{
-    max-width: 300px;
-    padding: 0 20px;
-    position: absolute;
-    top: 130px;
-    transition: transform 1s;
+  max-width: 300px;
+  padding: 0 20px;
+  position: absolute;
+  top: 130px;
+  transition: transform 1s;
 }
 form input{
-    width: 100%;
-    height: 30px;
-    margin: 10px 0;
-    padding: 0 10px;
-    border: 1px solid #ccc;
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #ccc;
 }
 form .btn{
-    width: 100%;
-    border: none;
-    cursor: pointer;
-    margin: 10px 0;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
 }
 form .btn:focus{
-    outline: none;
+  outline: none;
 }
 #LoginForm{
-    left: -300px;
+  left: -300px;
 }
 #RegForm{
-    left: 0;
+  left: 0;
 }
 form a{
-    font-size: 12px;
+  font-size: 12px;
 }
 #Indicator{
-    width: 100px;
-    border: none;
-    background: #ff523b;
-    height: 3px;
-    margin-top: 8px;
-    transform: translateX(100px);
-    transition: transform 1s;
+  width: 100px;
+  border: none;
+  background: #ff523b;
+  height: 3px;
+  margin-top: 8px;
+  transform: translateX(100px);
+  transition: transform 1s;
 }
 
 .blue-header {
-    background-color: blue;
-    color: white;
-    padding: 20px;
-}
-
-  
-  .timer-box {
-    background-color: #f2f2f2;
-    padding: 2px;
-    width: 100px;
-    height: 50px;
-    text-align: center;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .timer {
-    font-size: 20px;
-    color: #ff0000;
-  }
-
-
-  .col-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  
-  
-
-  
-/* OVO JE CSS OD PRVOG DIJELA IZ FOLDERA 1 */
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.4;
-    margin: 20px;
-    background-color: rgb(252, 253, 253); 
-  }
-  
-  h1 {
-    text-align: center;
-    margin-top: 50px;
-    color: rgb(0, 0, 0);
-    
-  }
-  h1 {
-    margin-top: 50px; /* Prilagodite vrijednost prema željenom pomaku prema dolje, POMJERANJE TEKSTA */
-  }
-  h1 {
-    text-align: left;
-  }
-  
-  /* Dodajte medijalni upit koji će primijeniti promjene samo na mobilnoj verziji */
-  @media (min-width: 768px) {
-    h1 {
-      margin-top: 0; /* Resetiraj marginu na 0 u širim prikazima */
-    }
-  }
-
-  @media (min-width: 768px) {
-    h1 {
-      margin-top: 120px; /* Promijenite vrijednost prema želji za odmak naslova iznad headbara */
-    }
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: rgb(0, 0, 0);
-  }
-
-  h3 {
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-  }
-
-  p {
-    color: rgb(0, 0, 0);
-  }
-
-  p2 {
-    color: rgb(13, 14, 14);
-  }
-
-  p50 {
-    color: rgb(232, 238, 238);
-  }
-
-  #product-list {
-    margin-top: 20px;
-  }
-  
-  img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .image-container {
-    text-align: center;
-  }
-  
-  .image-container {
-    position: relative;
-    top: -10px; /* Promijenite ovu vrijednost prema potrebi */
+  background-color: blue;
+  color: white;
+  padding: 20px;
 }
 
 
-  
-  .image-caption {
-    border: 1px solid rgb(0, 0, 0);
-    padding: 10px;
-    margin-top: 10px;
-    background-color: transparent;
-    display: inline-block;
-  }
-/* MOZDA OBRISATI */
-  .crossed-price {
-    text-decoration: line-through;
-    color: rgb(255, 56, 56);
-  }
-  
-  .real-price {
-    font-weight: bold;
-    color: rgb(53, 221, 67);
-    margin-top: 10px;
-  }
-  @media (max-width: 767px) {
-    .crossed-price {
-      font-size: 44px; /* Postavite željenu veličinu fonta za prekriženu cijenu */
-    }
-  
-    .real-price {
-      font-size: 44px; /* Postavite željenu veličinu fonta za cijenu ispod */
-    }
-  }  
-  
-  .product-details {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .product-details h2,
-  .product-details p {
-    margin-bottom: 10px;
-  }
-  
-  .product-details img {
-    max-width: 400px;
-    margin-top: 20px;
-  }
-
-  h3 {
-    margin-bottom: 30px; /* Prilagodite vrijednost prema želji */
-  }
-  
-  img {
-    margin-top: 30px; /* Prilagodite vrijednost prema želji */
-  }
-  
-  
-  .crossed-price span {
-    text-decoration: line-through;
-    color: rgb(12, 11, 11);
-  }
-  
-  .real-price span {
-    font-weight: bold;
-    color: red;
-    margin-top: 10px;
-  }
-
-  .real-price {
-    font-weight: bold;
-    color: rgb(32, 190, 72);
-    margin-top: 10px;
-    font-size: 34px; /* Dodajte ovu liniju i prilagodite vrijednost veličine fonta prema želji */
-  }
-  
-  .crossed-price {
-    text-decoration: line-through;
-    color: rgb(211, 23, 23);
-    font-size: 28px; /* Dodajte ovu liniju i prilagodite vrijednost veličine fonta prema želji */
-  }
-  
-  
-  .customer-details {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .customer-details h2 {
-    margin-bottom: 10px;
-  }
-  
- 
-  
-  /* BOX NARUČI */
-  .start-order-box {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(53, 221, 67);
-    color: black;
-    text-align: center;
-    line-height: 100px; /* Centriranje teksta u krugu */
-    border-radius: 50%; /* Pretvara kvadratni element u krug */
-    font-size: 20px;
-    margin: 10px auto; /* Automatsko poravnanje lijeve i desne margine */
-    animation: pulse 2s infinite; /* Promijenite 2s na željeno trajanje u sekundama */
-  }
-
-  /* Definiramo CSS ključnu animaciju "pulse" za efekt impulsa */
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
+.timer-box {
+  background-color: #f2f2f2;
+  padding: 2px;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-  
-  #customer-details-container {
-    border: 1px solid rgb(0, 0, 0);
-    padding: 20px;
-    max-width: 600px; /* Ograničili smo maksimalnu širinu na 400px */
-    margin: 20px auto; /* Povećali margin-top na 20px kako bismo ga pomaknuli prema dolje */
-    margin-bottom: 10px;
-    background-color: #eeeeee;
-  }
-  
-  
-  
-  /* Prethodni stilovi ostaju nepromijenjeni */
-
-  .product-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  
-  
-  /* POSLJEDNJI STO SU OSTALI*/
-  .last-12-box {
-    background-color: red;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 20px; /* Dodajemo razmak s donje strane */
-    border-radius: 5px;
-    width: fit-content;
-    animation: tremble 1.5s infinite;
-  }
-  @keyframes tremble {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-5px) rotate(-2deg); }
-    50% { transform: translateX(5px) rotate(2deg); }
-    75% { transform: translateX(-5px) rotate(-2deg); }
-    100% { transform: translateX(5px) rotate(2deg); }
-  }
-
-  @media (max-width: 767px) {
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  
-
-  }
-  
-  /* Dodajte sve vaše postojeće CSS stilove ovdje */
-
-/* POMJERANJE I VELICINA SLIKE U NARUCI */
-@media (max-width: 767px) {
-  .product-details img {
-    max-width: 200px; /* Željena širina slike na mobilnoj verziji */
-    margin-left: 60px;
-  }
-  
-  .price-details {
-    margin-top: 10px; /* Prilagodite vrijednost prema želji */
-  }
-  
-  .product-details {
-    overflow-x: hidden; /* Spriječava horizontalno klizanje unutar .product-details */
-  }
-}
-
-  
-  
-  .red-text {
-    color: red;
-  }
-  
-.bordo-text {
-  color: #af4141;
-  font-size: 28px;
-  text-align: left;
-}
-
-.crni-text {
-  color: #000000;
-  font-size: 24px;
-  text-align: left;
-}
-
-.manji-crni-text {
-  color: #000000;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: left;
-}
-
-.sivi-text {
-  color: #929292;
-  font-size: 16px;
-  font-style: italic;
-  text-align: left;
-}
-
-.crveni-text {
-  color: #ce0e0e;
+.timer {
   font-size: 20px;
-  font-weight: bold;
+  color: #ff0000;
+}
+
+
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+
+
+/* OVO JE CSS OD PRVOG DIJELA IZ FOLDERA 1 */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  margin: 20px;
+  background-color: rgb(252, 253, 253); 
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: rgb(0, 0, 0);
+  
+}
+h1 {
+  margin-top: 50px; /* Prilagodite vrijednost prema željenom pomaku prema dolje, POMJERANJE TEKSTA */
+}
+h1 {
   text-align: left;
 }
 
-  .headbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #d6d6d6;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
+/* Dodajte medijalni upit koji će primijeniti promjene samo na mobilnoj verziji */
+@media (min-width: 768px) {
+  h1 {
+    margin-top: 0; /* Resetiraj marginu na 0 u širim prikazima */
   }
-  
-  .discount-text {
-    font-weight: bold;
-  }
-  
-  .timer {
-    font-weight: bold;
-  }
-  /* HEADBAR ZAPOCNI NARUDŽBU */
-  .start-order {
-    padding: 8px 16px;
-    background-color: #1948e4; 
-    border-radius: 4px;
-  }
-  
-  .start-order a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-
-  
-  
-  .headbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .discount-text {
-    order: 1;
-  }
-  
-  .timer {
-    order: 2;
-  }
-  
-  .start-order {
-    order: 3;
-  }
-
-  @media (max-width: 768px) {
-    .headbar {
-      flex-direction: column;
-    }
-  }
-  
-  @media (max-width: 767px) {
-    .input-box.start-order-box {
-      width: calc(100% - 20px);
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-  }
-  
-  .input-box {
-    margin-bottom: 10px;
-    width: 200px;
-    margin: 0 auto;
-  }
-  
-  .input-box input {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #0a0a0a;
-    border-radius: 15px;
-    font-size: 18px; /* Prilagodite vrijednost prema željenom fontu */
-  }
-  
-  .input-box:not(:last-child) {
-    margin-bottom: 0;
-  }
-  
-
-
-  
-/* POMJERANJE HEADER PREMA GORE*/
-  .header {
-    margin-top: -40px; /* Prilagodite ovo prema željenom pomaku prema gore */
-  }
-  
-  /* Primjer kako pomaknuti logo ulijevo */
-.logo {
-  position: relative;
-  left: -30px; /* Prilagodite ovo prema željenom pomaku prema lijevo */
 }
 
-  
- 
-
-
-  
-  /* KOMENTARI */
-
-  .profile-pic {
-    margin-top: -6px; /* Pomaknite sliku prema gore 10 piksela */
+@media (min-width: 768px) {
+  h1 {
+    margin-top: 120px; /* Promijenite vrijednost prema želji za odmak naslova iznad headbara */
   }
-
-.comment-container {
-  max-width: 100%; /* Postavite maksimalnu širinu boxa na 100% širine zaslona */
-  width: 300px; /* Opcionalno: postavite željenu fiksnu širinu boxa u pikselima */
-  margin: 0 auto; /* Centrirajte box na stranici */
-  overflow: hidden; /* Spriječite horizontalno klizanje */
-}
-  /* background  */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    overflow-x: hidden;
 }
 
-.comment-container {
-    width: 400px;
-    margin: 0 auto;
-    overflow-x: hidden;
-    margin-top: 50px;
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
 }
 
 h3 {
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
 }
 
-.comment {
-    display: flex;
-    align-items: flex-start;
-    border: 1px solid #ddd;
-    background-color: #e6f3ff; /* Promijenili smo boju boxa u svijetlo plavu */
-    border-radius: 10px; /* Dodali zaobljenost boxa */
-    padding: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box; /* Dodajte ovu liniju */
-    width: 100%; /* Opcionalno: Povećajte širinu boxa na 100% */
-    margin-bottom: 20px; /* Povećajte razmak između komentara */
+p {
+  color: rgb(0, 0, 0);
 }
 
-.profile-pic {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-right: 10px;
+p2 {
+  color: rgb(13, 14, 14);
 }
 
-.user-info {
-    flex: 1;
+p50 {
+  color: rgb(232, 238, 238);
 }
 
-.user-name {
-    font-weight: bold;
+#product-list {
+  margin-top: 20px;
 }
 
-.date {
-    color: #888;
-    margin-top: 6px;
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
-.comment-text {
-    margin-top: 5px;
-    margin-bottom: 10px;
+.image-container {
+  text-align: center;
 }
 
-.like-button {
-    color: #888;
-    font-size: 12px;
-    text-align: right;
-    cursor: pointer;
+.image-container {
+  position: relative;
+  top: -10px; /* Promijenite ovu vrijednost prema potrebi */
 }
 
-.like-button i {
+
+
+.image-caption {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+  margin-top: 10px;
+  background-color: transparent;
+  display: inline-block;
+}
+/* MOZDA OBRISATI */
+.crossed-price {
+  text-decoration: line-through;
+  color: rgb(255, 56, 56);
+}
+
+.real-price {
+  font-weight: bold;
+  color: rgb(53, 221, 67);
+  margin-top: 10px;
+}
+@media (max-width: 767px) {
+  .crossed-price {
+    font-size: 44px; /* Postavite željenu veličinu fonta za prekriženu cijenu */
+  }
+
+  .real-price {
+    font-size: 44px; /* Postavite željenu veličinu fonta za cijenu ispod */
+  }
+}  
+
+.product-details {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.product-details h2,
+.product-details p {
+  margin-bottom: 10px;
+}
+
+.product-details img {
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+h3 {
+  margin-bottom: 30px; /* Prilagodite vrijednost prema želji */
+}
+
+img {
+  margin-top: 30px; /* Prilagodite vrijednost prema želji */
+}
+
+
+.crossed-price span {
+  text-decoration: line-through;
+  color: rgb(12, 11, 11);
+}
+
+.real-price span {
+  font-weight: bold;
+  color: red;
+  margin-top: 10px;
+}
+
+.real-price {
+  font-weight: bold;
+  color: rgb(32, 190, 72);
+  margin-top: 10px;
+  font-size: 34px; /* Dodajte ovu liniju i prilagodite vrijednost veličine fonta prema želji */
+}
+
+.crossed-price {
+  text-decoration: line-through;
+  color: rgb(211, 23, 23);
+  font-size: 28px; /* Dodajte ovu liniju i prilagodite vrijednost veličine fonta prema želji */
+}
+
+
+.customer-details {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.customer-details h2 {
+  margin-bottom: 10px;
+}
+
+
+
+/* BOX NARUČI */
+.start-order-box {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(53, 221, 67);
+  color: black;
+  text-align: center;
+  line-height: 100px; /* Centriranje teksta u krugu */
+  border-radius: 50%; /* Pretvara kvadratni element u krug */
+  font-size: 20px;
+  margin: 10px auto; /* Automatsko poravnanje lijeve i desne margine */
+  animation: pulse 2s infinite; /* Promijenite 2s na željeno trajanje u sekundama */
+}
+
+/* Definiramo CSS ključnu animaciju "pulse" za efekt impulsa */
+@keyframes pulse {
+0% { transform: scale(1); }
+50% { transform: scale(1.1); }
+100% { transform: scale(1); }
+}
+
+
+
+#customer-details-container {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 20px;
+  max-width: 600px; /* Ograničili smo maksimalnu širinu na 400px */
+  margin: 20px auto; /* Povećali margin-top na 20px kako bismo ga pomaknuli prema dolje */
+  margin-bottom: 10px;
+  background-color: #eeeeee;
+}
+
+
+
+/* Prethodni stilovi ostaju nepromijenjeni */
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+/* POSLJEDNJI STO SU OSTALI*/
+.last-12-box {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px; /* Dodajemo razmak s donje strane */
+  border-radius: 5px;
+  width: fit-content;
+  animation: tremble 1.5s infinite;
+}
+@keyframes tremble {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px) rotate(-2deg); }
+  50% { transform: translateX(5px) rotate(2deg); }
+  75% { transform: translateX(-5px) rotate(-2deg); }
+  100% { transform: translateX(5px) rotate(2deg); }
+}
+
+@media (max-width: 767px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+}
+
+/* Dodajte sve vaše postojeće CSS stilove ovdje */
+
+/* POMJERANJE I VELICINA SLIKE U NARUCI */
+@media (max-width: 767px) {
+.product-details img {
+  max-width: 200px; /* Željena širina slike na mobilnoj verziji */
+  margin-left: 60px;
+}
+
+.price-details {
+  margin-top: 10px; /* Prilagodite vrijednost prema želji */
+}
+
+.product-details {
+  overflow-x: hidden; /* Spriječava horizontalno klizanje unutar .product-details */
+}
+}
+
+
+
+.red-text {
+  color: red;
+}
+
+.bordo-text {
+color: #af4141;
+font-size: 28px;
+text-align: left;
+}
+
+.crni-text {
+color: #000000;
+font-size: 24px;
+text-align: left;
+}
+
+.manji-crni-text {
+color: #000000;
+font-size: 16px;
+font-weight: bold;
+text-align: left;
+}
+
+.sivi-text {
+color: #929292;
+font-size: 16px;
+font-style: italic;
+text-align: left;
+}
+
+.crveni-text {
+color: #ce0e0e;
+font-size: 20px;
+font-weight: bold;
+text-align: left;
+}
+
+.headbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d6d6d6;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.discount-text {
+  font-weight: bold;
+}
+
+.timer {
+  font-weight: bold;
+}
+/* HEADBAR ZAPOCNI NARUDŽBU */
+.start-order {
+  padding: 8px 16px;
+  background-color: #1948e4; 
+  border-radius: 4px;
+}
+
+.start-order a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+
+.headbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.discount-text {
+  order: 1;
+}
+
+.timer {
+  order: 2;
+}
+
+.start-order {
+  order: 3;
+}
+
+@media (max-width: 768px) {
+  .headbar {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .input-box.start-order-box {
+    width: calc(100% - 20px);
+    margin-left: 5px;
     margin-right: 5px;
+  }
 }
+
+.input-box {
+  margin-bottom: 10px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #0a0a0a;
+  border-radius: 15px;
+  font-size: 18px; /* Prilagodite vrijednost prema željenom fontu */
+}
+
+.input-box:not(:last-child) {
+  margin-bottom: 0;
+}
+
+
+
+
+/* POMJERANJE HEADER PREMA GORE*/
+.header {
+  margin-top: -40px; /* Prilagodite ovo prema željenom pomaku prema gore */
+}
+
+/* Primjer kako pomaknuti logo ulijevo */
+.logo {
+position: relative;
+left: -30px; /* Prilagodite ovo prema željenom pomaku prema lijevo */
+}
+
+
+
+
+
+
+/* KOMENTARI */
 
 .profile-pic {
   margin-top: -6px; /* Pomaknite sliku prema gore 10 piksela */
 }
 
+.comment-container {
+max-width: 100%; /* Postavite maksimalnu širinu boxa na 100% širine zaslona */
+width: 300px; /* Opcionalno: postavite željenu fiksnu širinu boxa u pikselima */
+margin: 0 auto; /* Centrirajte box na stranici */
+overflow: hidden; /* Spriječite horizontalno klizanje */
+}
+/* background  */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.comment-container {
+  width: 400px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  margin-top: 50px;
+}
+
+h3 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+  background-color: #e6f3ff; /* Promijenili smo boju boxa u svijetlo plavu */
+  border-radius: 10px; /* Dodali zaobljenost boxa */
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Dodajte ovu liniju */
+  width: 100%; /* Opcionalno: Povećajte širinu boxa na 100% */
+  margin-bottom: 20px; /* Povećajte razmak između komentara */
+}
+
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.date {
+  color: #888;
+  margin-top: 6px;
+}
+
+.comment-text {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.like-button {
+  color: #888;
+  font-size: 12px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.like-button i {
+  margin-right: 5px;
+}
+
+.profile-pic {
+margin-top: -6px; /* Pomaknite sliku prema gore 10 piksela */
+}
+
 /* Dodajte media query za desktop verziju */
 @media (min-width: 1280px) {
-  .comment-container {
-    width: 800px; /* Povećajte širinu boxa na 500 piksela za desktop verziju */
-  }
+.comment-container {
+  width: 800px; /* Povećajte širinu boxa na 500 piksela za desktop verziju */
+}
 }
 
 .images-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+display: flex;
+justify-content: center;
+margin-top: 10px;
 }
 
 .images-container img {
-  max-width: 100%;
-  height: auto;
-  margin: 5px;
+max-width: 100%;
+height: auto;
+margin: 5px;
 }
 
 
 
 .special-offer-box {
-  width: 200px;
-  height: 100px;
-  background: linear-gradient(135deg, #fbbf00 0%, #ff7a00 100%);
-  border-radius: 20px;
-  color: #fff;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  width: 120px; /* Promijenite ovu vrijednost prema vašim željama za širinu */
-  height: 95px; /* Promijenite ovu vrijednost prema vašim željama za visinu */
-  font-weight: bold;
-  position: absolute;
-  top: 30%; /* Promijenite ovu vrijednost prema vašim željama za pomjeranje prema gore */
-  left: 25%; /* Promijenite ovu vrijednost prema vašim željama za pomjeranje ulijevo */
-  transform: translate(-50%, -50%) rotate(-10deg); /* Rotacija ulijevo */
-  z-index: 1;
-  border: 3px solid rgb(255, 255, 255); /* Dodajte bijele linije oko boxa */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Dodajte sjenu prema vašim željama */
-  line-height: 1.0;
+width: 200px;
+height: 100px;
+background: linear-gradient(135deg, #fbbf00 0%, #ff7a00 100%);
+border-radius: 20px;
+color: #fff;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 18px;
+width: 120px; /* Promijenite ovu vrijednost prema vašim željama za širinu */
+height: 95px; /* Promijenite ovu vrijednost prema vašim željama za visinu */
+font-weight: bold;
+position: absolute;
+top: 30%; /* Promijenite ovu vrijednost prema vašim željama za pomjeranje prema gore */
+left: 25%; /* Promijenite ovu vrijednost prema vašim željama za pomjeranje ulijevo */
+transform: translate(-50%, -50%) rotate(-10deg); /* Rotacija ulijevo */
+z-index: 1;
+border: 3px solid rgb(255, 255, 255); /* Dodajte bijele linije oko boxa */
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Dodajte sjenu prema vašim željama */
+line-height: 1.0;
 }
 
 .special-crossed-price {
-  font-size: 16px;
-  margin-top: 5px;
-  text-decoration: line-through;
+font-size: 16px;
+margin-top: 5px;
+text-decoration: line-through;
 }
 
 .special-price {
-  font-size: 26px;
-  margin-top: 5px;
+font-size: 26px;
+margin-top: 5px;
 }
 
 .special-price::after {
-  content: '';
-  display: block;
-  width: 60%;
-  height: 3px;
-  background-color: red;
-  position: absolute;
-  bottom: 4px; /* Promijenite ovu vrijednost ako želite podesiti razmak između cijene i crvene linije */
-  left: 25px;
+content: '';
+display: block;
+width: 60%;
+height: 3px;
+background-color: red;
+position: absolute;
+bottom: 4px; /* Promijenite ovu vrijednost ako želite podesiti razmak između cijene i crvene linije */
+left: 25px;
 }
 .product-details {
-  position: relative;
+position: relative;
 }
 
 
+
+
+
+
+.birthday-gift {
+  position: relative;
+  margin-bottom: 80px; /* Dodajte ovu liniju za dodavanje razmaka prema dolje */
+  margin-top: 100px; /* Dodajte ovu liniju za dodavanje razmaka prema gore */
+}
+
+.birthday-gift:before {
+  content:"";
+  position: absolute;
+  width: 170px;
+  height:20px;
+  border-radius:50%;
+  background-color: rgba(0,0,0,0.4);
+  top:90px;
+  left:-10px;
+  margin-left: 100px;
+}
+
+input#click {
+  display: none;
+}
+
+.gift {
+  position: relative;
+  width: 150px;
+  height: 100px;
+  background-color: #e9c46a;
+  margin-left: 100px; /* Dodajte ovu liniju za pomjeranje udesno */
+}
+
+.gift:before {
+  content:"";
+  position: absolute;
+  width: 25px;
+  height: 100px;
+  background-color: #e76f51;
+  left:62px;
+}
+
+.gift:after {
+  content:"";
+  position: absolute;
+  box-shadow: inset 0 10px rgba(0,0,0,0.3);
+  width: 150px;
+  height: 100px;
+}
+
+.click {
+  position: absolute;
+  background-color: #e9c46a;
+  width: 170px;
+  height: 40px;
+  top:-40px;
+  left:-10px;
+  transform-origin: bottom left;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.click:before {
+  content:"";
+  position: absolute;
+  width: 25px;
+  height: 40px;
+  background-color: #e76f51;
+  left:72px;
+}
+
+.click:after {
+  content:"";
+  position: absolute;
+  width: 5px;
+  height: 0;
+  border-bottom: 30px solid #e76f51;
+  border-top: 30px solid #e76f51;
+  border-left: 0px solid transparent;
+  border-right: 30px solid transparent;
+  transform: rotate(-90deg);
+  left:65px;
+  top:-47px;
+}
+
+#click:checked + .click {
+  transform: rotate(-110deg) scaleX(0.85);
+}
+
+.wishes {
+  position: absolute;
+  transition: .5s;
+  color: #333;
+  font-size: 37px;
+  text-align: center;
+  z-index:-1;
+  left:5px;
+}
+
+#click:checked ~ .wishes {
+  transform: translateY(-100px);
+}
+
+#click:checked ~ .sparkles {
+  display: block;
+}
+
+
+
+.sparkles {
+  position: absolute;
+  display: none;
+  top:-15px;
+  z-index:-2;
+  left:40px;
+}
+
+.spark1, .spark2, .spark3, .spark4, .spark5, .spark6 {
+  position: absolute;
+  background-color: #fee440;
+  border-radius:50%;
+  top:-9px;
+  z-index:-1;
+}
+
+.spark1 {
+  width: 8px;
+  height:8px;
+  left:30px;
+  top:-9px;
+  animation: fire 0.9s ease-in-out infinite, color 0.4s linear infinite;
+}
+
+.spark1:before {
+  content:"";
+  position: absolute;
+  width:5px;
+  height:5px;
+  top:8px;
+  left:11px;
+  background-color: #fee440;
+  border-radius:50%;
+}
+
+.spark2 {
+  width: 9px;
+  height:9px;
+  left:33px;
+  top:-5px;
+  animation: fire2 0.28s ease-in-out infinite, color 0.4s linear infinite;
+}
+
+.spark2:before {
+  content:"";
+  position: absolute;
+  width:5px;
+  height:5px;
+  top:12px;
+  left:3px;
+  background-color: #fee440;
+  border-radius:50%;
+}
+
+.spark3 {
+  width: 8.5px;
+  height:8.5px;
+  left:33px;
+  top:-5px;
+  animation: fire3 0.36s ease-in-out infinite, color2 0.4s linear infinite;
+}
+
+.spark3:before {
+  content:"";
+  position: absolute;
+  width:5px;
+  height:5px;
+  top:12px;
+  left:-1px;
+  background-color: #fee440;
+  border-radius:50%;
+}
+
+.spark4 {
+  width: 7px;
+  height:7px;
+  left:27px;
+  top:-5px;
+  animation: fire2 0.24s ease-in-out infinite, color2 0.2s linear infinite;
+}
+
+.spark5 {
+  width: 7px;
+  height:7px;
+  left:29px;
+  top:-5px;
+  animation: fire3 0.45s ease-in-out infinite, color 0.2s linear infinite;
+}
+
+.spark6 {
+  width: 6px;
+  height:6px;
+  left:29px;
+  top:-5px;
+  animation: fire 0.35s ease-in-out infinite, color2 0.2s linear infinite;
+}
+  
+@keyframes fire3 {
+  100% { transform:translateX(20px) translateY(-93px); 
+         opacity: 0.3; }
+}
+
+@keyframes fire2 {
+  100% { transform:translateX(-5px) translateY(-90px); 
+         opacity: 0.3; }
+}
+
+@keyframes fire {
+  100% { transform:translateX(-25px) translateY(-95px); 
+         opacity: 0.3; }
+}
+
+@keyframes color {
+  from {background-color: #d00000;}
+  to {background-color: #0081a7;}
+}
+
+@keyframes color2 {
+  from {background-color: #8cff00;}
+  to {background-color: #1d2d44;}
+}
+
+
+/* Ovo će primijeniti promjene samo na desktop verziji (širine ekrana veće od 768 piksela) */
+@media (min-width: 768px) {
+  .birthday-gift:before {
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 90px;
+    left: -10px;
+    margin-left: 738px;
+  }
+
+  .gift {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    background-color: #e9c46a;
+    margin-left: 738px; /* Dodajte ovu liniju za pomjeranje udesno */
+  }
+}
+
+/* DA SE UNOS DETALJA KUPACA SAKRIJE DOK SE NE KLIKNE NA BOX */
+#customer-details-container {
+  display: none;
+}
