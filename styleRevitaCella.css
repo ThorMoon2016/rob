@@ -1505,3 +1505,15 @@ input#click {
 #customer-details-container {
   display: none;
 }
+
+
+
+.discount-box {
+  background-color: #4CAF50; /* Zelena boja pozadine */
+  color: white; /* Bijela boja teksta */
+  padding: 10px; /* Dodajte odstupanje unutar okvira */
+  border-radius: 5px; /* Radijus zaobljenih rubova */
+  text-align: center; /* Tekst je centriran */
+  width: 250px; /* Širina okvira (prilagodite prema potrebi) */
+  margin: 0 auto; /* Centriranje okvira na stranici */
+}
