@@ -255,6 +255,43 @@ Za individualne rezultate, nastavite pratiti napredak i prilagodite primjenu pre
     
   
 
+<!-- Dodajte Chart.js biblioteku   GRAFIKON -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Dodajte element <canvas> za prikaz pie charta  GRAFIKON -->
+<canvas id="myPieChart" width="400" height="400"></canvas>
+
+
+<style>
+  /* Stil za prikaz pie charta */
+  @media (min-width: 768px) {
+    #myPieChart {
+      max-width: 400px; /* Prilagodite ovoj vrijednosti prema vašoj želji */
+      margin: 0 auto; /* Centrirajte chart */
+    }
+  }
+</style>
+
+<script>
+  // JavaScript kod za kreiranje pie charta
+  var ctx = document.getElementById('myPieChart').getContext('2d');
+  var myPieChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ['Gel 1', 'RevitaCella gel', 'Gel 2'], // Zamijenite ovo sa svojim labelama
+      datasets: [{
+        data: [10, 70, 20], // Zamijenite ovo sa svojim podacima
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.7)',
+          'rgba(54, 162, 235, 0.7)',
+          'rgba(255, 206, 86, 0.7)'
+        ]
+      }]
+    }
+  });
+</script>
+
+
     <!-- Nakon prethodnog sadržaja, ukljucen css -->
 <div class="doctor-info">
   <h2 style="color: #b30000; font-weight: bold; margin-top: 20px;">Na vaša pitanja odgovara Dr. Zlatan Kapetanović</h2>
@@ -378,41 +415,7 @@ Sa svojom predanošću ljepoti i zdravlju kože, Dr. Kapetanović je postao sino
 
     
 
-<!-- Dodajte Chart.js biblioteku   GRAFIKON -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<!-- Dodajte element <canvas> za prikaz pie charta  GRAFIKON -->
-<canvas id="myPieChart" width="400" height="400"></canvas>
-
-
-<style>
-  /* Stil za prikaz pie charta */
-  @media (min-width: 768px) {
-    #myPieChart {
-      max-width: 400px; /* Prilagodite ovoj vrijednosti prema vašoj želji */
-      margin: 0 auto; /* Centrirajte chart */
-    }
-  }
-</style>
-
-<script>
-  // JavaScript kod za kreiranje pie charta
-  var ctx = document.getElementById('myPieChart').getContext('2d');
-  var myPieChart = new Chart(ctx, {
-    type: 'pie',
-    data: {
-      labels: ['Gek 1', 'RevitaCella gel', 'Gel 2'], // Zamijenite ovo sa svojim labelama
-      datasets: [{
-        data: [10, 70, 20], // Zamijenite ovo sa svojim podacima
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.7)',
-          'rgba(54, 162, 235, 0.7)',
-          'rgba(255, 206, 86, 0.7)'
-        ]
-      }]
-    }
-  });
-</script>
 
 
 <style>
@@ -426,6 +429,11 @@ Sa svojom predanošću ljepoti i zdravlju kože, Dr. Kapetanović je postao sino
 </head>
 <body>
 
+
+  <div class="discount-box">
+    OTVORITE KUTIJU ZA DO 50% POPUSTA!
+  </div>
+  
 
   <div class="birthday-gift">
     <div class="gift">
@@ -511,38 +519,48 @@ function gtag_report_conversion(url) {
               this.value = this.value.replace(/[^0-9]/g, ''); // Uklanja sve znakove osim brojeva
             });
           </script>
-          
-          <script>
-            // Selektirajte dar (cijelu kutiju)
-            const giftBox = document.querySelector('.birthday-gift');
-          
-            // Selektirajte poklopac kutije
-            const giftLid = document.querySelector('.click');
-          
-            // Selektirajte kontejner za unos detalja kupca
-            const customerDetailsContainer = document.getElementById('customer-details-container');
-          
-            // Selektirajte poruku "Osvojili ste 50%"
-            const wishes = document.querySelector('.wishes');
-          
-            // Dodajte event listener za klik na cijelu kutiju
-            giftBox.addEventListener('click', () => {
-              // Otvaranje kutije (poklopac)
-              giftLid.style.transform = 'rotate(-110deg) scaleX(0.85)';
-              
-              // Prikaži poruku "Osvojili ste 50%" odmah
-              wishes.style.transform = 'translateY(-100px)';
-              
-              // Pričekajte 3 sekunde prije prikazivanja kontejnera za unos detalja kupaca
-              setTimeout(() => {
-                // Prikazivanje kontejnera za unos detalja kupaca nakon 3 sekunde
-                customerDetailsContainer.style.display = 'block';
-          
-                // Sakrij gift box
-                giftBox.style.display = 'none';
-              }, 3000); // 3000 milisekundi = 3 sekunde
-            });
-          </script>
+         
+         
+
+
+         <script>
+          // Selektirajte dar (cijelu kutiju)
+          const giftBox = document.querySelector('.birthday-gift');
+        
+          // Selektirajte poklopac kutije
+          const giftLid = document.querySelector('.click');
+        
+          // Selektirajte kontejner za unos detalja kupca
+          const customerDetailsContainer = document.getElementById('customer-details-container');
+        
+          // Selektirajte poruku "Osvojili ste 50%"
+          const wishes = document.querySelector('.wishes');
+        
+          // Selektirajte zeleni box
+          const discountBox = document.querySelector('.discount-box');
+        
+          // Dodajte event listener za klik na cijelu kutiju
+          giftBox.addEventListener('click', () => {
+            // Otvaranje kutije (poklopac)
+            giftLid.style.transform = 'rotate(-110deg) scaleX(0.85)';
+            
+            // Prikaži poruku "Osvojili ste 50%" odmah
+            wishes.style.transform = 'translateY(-100px)';
+            
+            // Pričekajte 3 sekunde prije prikazivanja kontejnera za unos detalja kupaca
+            setTimeout(() => {
+              // Prikazivanje kontejnera za unos detalja kupaca nakon 3 sekunde
+              customerDetailsContainer.style.display = 'block';
+            }, 3000); // 3000 milisekundi = 3 sekunde
+        
+            // Sakrij gift box i zeleni box nakon 3 sekunde
+            setTimeout(() => {
+              giftBox.style.display = 'none';
+              discountBox.style.display = 'none';
+            }, 3000); // 3000 milisekundi = 3 sekunde
+          });
+        </script>
+        
           
           
 </div>
